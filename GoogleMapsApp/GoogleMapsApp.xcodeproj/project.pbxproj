@@ -13,6 +13,8 @@
 		846048DA1F170C7000DCF069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846048D91F170C7000DCF069 /* Assets.xcassets */; };
 		846048DD1F170C7000DCF069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846048DB1F170C7000DCF069 /* LaunchScreen.storyboard */; };
 		846048E71F1711F900DCF069 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846048E61F1711F900DCF069 /* MapsVC.swift */; };
+		846048E91F1718B900DCF069 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846048E81F1718B900DCF069 /* MapsViewController.swift */; };
+		846048EB1F1718CA00DCF069 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846048EA1F1718CA00DCF069 /* PlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		846048DC1F170C7000DCF069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846048DE1F170C7000DCF069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846048E61F1711F900DCF069 /* MapsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
+		846048E81F1718B900DCF069 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		846048EA1F1718CA00DCF069 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		8D1DEFCDD3DF3BE6488E42CC /* Pods_GoogleMapsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,8 @@
 			children = (
 				846048D21F170C7000DCF069 /* AppDelegate.swift */,
 				846048E61F1711F900DCF069 /* MapsVC.swift */,
+				846048E81F1718B900DCF069 /* MapsViewController.swift */,
+				846048EA1F1718CA00DCF069 /* PlacesViewController.swift */,
 				846048D61F170C7000DCF069 /* Main.storyboard */,
 				846048D91F170C7000DCF069 /* Assets.xcassets */,
 				846048DB1F170C7000DCF069 /* LaunchScreen.storyboard */,
@@ -211,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846048EB1F1718CA00DCF069 /* PlacesViewController.swift in Sources */,
+				846048E91F1718B900DCF069 /* MapsViewController.swift in Sources */,
 				846048D31F170C7000DCF069 /* AppDelegate.swift in Sources */,
 				846048E71F1711F900DCF069 /* MapsVC.swift in Sources */,
 			);
