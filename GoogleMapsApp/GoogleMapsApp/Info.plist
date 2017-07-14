@@ -34,10 +34,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>googlechromes</string>
-        <string>comgooglemaps</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Cho phep cap nhat vi tri</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Cap nhap vi tri</string>
 </dict>
 </plist>

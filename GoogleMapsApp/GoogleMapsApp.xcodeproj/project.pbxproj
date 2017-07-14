@@ -14,6 +14,7 @@
 		846048DD1F170C7000DCF069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846048DB1F170C7000DCF069 /* LaunchScreen.storyboard */; };
 		846048E91F1718B900DCF069 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846048E81F1718B900DCF069 /* MapsViewController.swift */; };
 		846048EB1F1718CA00DCF069 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846048EA1F1718CA00DCF069 /* PlacesViewController.swift */; };
+		F28699351F18619000796CCA /* Geofencing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F28699341F18619000796CCA /* Geofencing.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		846048E81F1718B900DCF069 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		846048EA1F1718CA00DCF069 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		8D1DEFCDD3DF3BE6488E42CC /* Pods_GoogleMapsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28699341F18619000796CCA /* Geofencing.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geofencing.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				846048D91F170C7000DCF069 /* Assets.xcassets */,
 				846048DB1F170C7000DCF069 /* LaunchScreen.storyboard */,
 				846048DE1F170C7000DCF069 /* Info.plist */,
+				F28699341F18619000796CCA /* Geofencing.gpx */,
 			);
 			path = GoogleMapsApp;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28699351F18619000796CCA /* Geofencing.gpx in Resources */,
 				846048DD1F170C7000DCF069 /* LaunchScreen.storyboard in Resources */,
 				846048DA1F170C7000DCF069 /* Assets.xcassets in Resources */,
 				846048D81F170C7000DCF069 /* Main.storyboard in Resources */,

@@ -35,22 +35,6 @@ class MapsViewController: UIViewController {
     // A default location to use when location permission is not granted.
     let defaultLocation = CLLocation(latitude: -33.869405, longitude: 151.199)
     
-    // Update the map once the user has made their selection
-    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-        // Clear map
-        mapView.clear()
-        
-        // Add a marker to the map
-        if selectedPlaces != nil {
-            let marker = GMSMarker(position: (self.selectedPlaces?.coordinate)!)
-            marker.title = selectedPlaces?.name
-            marker.snippet = selectedPlaces?.formattedAddress
-            marker.map = mapView
-        }
-        
-        listLikePlaces()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
@@ -88,7 +72,22 @@ class MapsViewController: UIViewController {
             }
         })
     }
-
+    
+    // Update the map once the user has made their selection
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        // Clear map
+        mapView.clear()
+        
+        // Add a marker to the map
+        if selectedPlaces != nil {
+            let marker = GMSMarker(position: (self.selectedPlaces?.coordinate)!)
+            marker.title = selectedPlaces?.name
+            marker.snippet = selectedPlaces?.formattedAddress
+            marker.map = mapView
+        }
+        
+        listLikePlaces()
+    }
     
     // MARK: - Navigation
 
