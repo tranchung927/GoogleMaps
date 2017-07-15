@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nrm-l8-DNE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,26 +9,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Current Place on a Map-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Map View Controller-->
+        <scene sceneID="2Gd-bg-3jU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapsViewController" customModule="GoogleMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GjG-ru-vJ1" customClass="MapViewController" customModule="GoogleMapsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="7se-Ua-ML3"/>
+                        <viewControllerLayoutGuide type="bottom" id="MCF-2I-1SF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8UV-fJ-b1t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-Hb-sGN" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hoZ-Hb-sGN" firstAttribute="top" secondItem="7se-Ua-ML3" secondAttribute="bottom" id="7Wi-tI-Xe2"/>
+                            <constraint firstAttribute="trailing" secondItem="hoZ-Hb-sGN" secondAttribute="trailing" id="aCi-WJ-gz2"/>
+                            <constraint firstItem="MCF-2I-1SF" firstAttribute="top" secondItem="hoZ-Hb-sGN" secondAttribute="bottom" id="ePy-sV-Lkm"/>
+                            <constraint firstItem="hoZ-Hb-sGN" firstAttribute="leading" secondItem="8UV-fJ-b1t" secondAttribute="leading" id="lwf-jt-ZUr"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Current Place on a Map" id="SJk-ED-Hm0">
-                        <barButtonItem key="rightBarButtonItem" title="Get Place" id="1ck-Mh-8t7"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="wR8-OM-4qf"/>
+                    <connections>
+                        <outlet property="mapViewCustom" destination="hoZ-Hb-sGN" id="7UA-zb-zxU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCf-xj-Cki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="35.532233883058474"/>
+            <point key="canvasLocation" x="2580" y="-26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gG0-Qn-19L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nrm-l8-DNE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kgh-kF-RfY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zMc-8k-iM3">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="GjG-ru-vJ1" kind="relationship" relationship="rootViewController" id="cQd-jE-T9L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtD-qy-s0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.8" y="-26.53673163418291"/>
         </scene>
     </scenes>
 </document>
